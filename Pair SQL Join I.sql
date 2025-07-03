@@ -45,5 +45,13 @@ SELECT * FROM orders; -- aqui tenemos identificador del cliente(customer_id) y i
 SELECT * FROM order_details; -- aqui tenemos identificador del pedido (order_id) y identificador del producto (product_id)
 
 
+SELECT company_name, customers.customer_id, COUNT(order_id) AS "Numero_pedidos"
+FROM customers
+INNER JOIN orders
+ON customers.customer_id = orders.customer_id
+WHERE country = "UK"  
+GROUP BY company_name, customers.customer_id; 
+
+
 
 
