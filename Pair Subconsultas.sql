@@ -57,17 +57,14 @@ SELECT EmployeeID, OrderID, OrderDate
 FROM Orders;
 
 
-
-
-
-
-
-
-
 # 2
 # Extraed información de los productos "Beverages"
 # En este caso nuestro jefe nos pide que le devolvamos toda la información necesaria para identificar un tipo de producto. En concreto, tienen especial interés por los productos con categoría "Beverages". 
 # Devuelve el ID del producto, el nombre del producto y su ID de categoría.
+
+
+
+
 
 
 
